@@ -1,0 +1,37 @@
+.footer {
+    margin-top: clamp(10.625rem, calc(-1.88vw + 11.07rem), 9.375rem);
+    width: 100%;
+    padding: 0 2rem;
+    background-color: $color-cream;
+    @include flex-column-align-center;
+
+    &__inner {
+        width: 100%;
+        max-width: 69.375rem;
+        margin-top: clamp(3.4375rem, calc(-1.50vw + 3.79rem), 2.4375rem);
+        margin-bottom: clamp(3.125rem, calc(-0.94vw + 3.35rem), 2.5rem);
+        @include flex-column-align-center;
+
+        @include respond(medium-screen) {
+            flex-direction: row;
+          }
+    }
+
+    &__nav {
+        margin-top: 2.5rem;
+
+        @include respond(medium-screen) {
+            margin-top: 0;
+            margin-left: clamp(1.875rem, calc(15.63vw + -5.63rem), 8.4375rem);
+          }
+    }
+
+    &__social-media-panel {
+        margin-top: 3.125rem;
+
+        @include respond(medium-screen) {
+            margin-top: 0;
+            margin-left: auto;
+          }
+    }
+}

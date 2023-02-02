@@ -1,0 +1,34 @@
+.textbox {
+    @include flex-column-align-center;
+    max-width: 45.625rem;
+
+    &--hero {
+        @include flex-column-align-center;
+        align-items: flex-start;
+        row-gap: 2rem;
+    
+        @include respond(medium-screen) {
+            row-gap: 2.5rem;
+        }
+    }
+
+    &--stats {
+        gap: 1px;
+        @include respond(stats) {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    &--quote {
+        gap: clamp(0.625rem, calc(-0.19vw + 0.67rem), 0.5rem);
+        max-width: 21.875rem;
+    }
+
+    &--quote-author {
+        @include respond(medium-screen) {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+}

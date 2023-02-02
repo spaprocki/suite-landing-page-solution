@@ -1,0 +1,10 @@
+.social-media-panel {
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include respond(medium-screen) {
+        width: 7.5rem;
+      }
+}

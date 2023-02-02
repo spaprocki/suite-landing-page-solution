@@ -1,0 +1,22 @@
+.link {
+    text-decoration: none;
+    color: $color-dark-blue;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: left;
+
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(62%) sepia(14%) saturate(2022%) hue-rotate(121deg) brightness(96%) contrast(87%);
+    }
+
+    &:focus, :focus-visible {
+        outline-width: 3px;
+        outline-style:  dashed;
+        outline-offset: 5px;
+        outline-color: $color-dark-blue;
+
+        &:focus:not(:focus-visible) {
+            outline: none;
+          }
+      }
+}

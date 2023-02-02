@@ -1,0 +1,70 @@
+.main {
+    width: 100%;
+    
+
+    & > * {
+        width: 100%;
+        @include flex-column-align-center;
+    }
+
+.hero {
+        margin-top: clamp(5.1875rem, calc(21.63vw + 0.12rem), 10.5rem);
+        @include horizontal-padding;
+
+        &__inner {
+            width: 100%;
+            max-width: 69.375rem;
+            position: relative;
+            @include flex-column-align-center;
+
+            @include respond(stats) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+    
+        &__textbox {
+            align-self: flex-start;
+            text-align: left;
+        }
+
+        &__picture {
+            margin-top: 3.5rem;
+            width: 100%;
+
+            @include respond(medium-screen) {
+                margin-top: 0;
+                width: clamp(17.5625rem, calc(10.27vw + 12.63rem), 21.875rem);
+                position: absolute;
+                top: -6.4375rem;
+                right: 0;
+                left: clamp(25.5rem, calc(9.82vw + 20.79rem), 29.625rem);
+                z-index: -1;
+            }
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &__stats {
+            margin-top: 3.5rem;
+            @include respond(medium-screen) {
+                margin-top: 8rem;
+            }
+            @include respond(stats) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .review {
+        @include flex-column-align-center;
+
+    }
+
+    
+}
+
+

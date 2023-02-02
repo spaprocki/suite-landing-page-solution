@@ -1,0 +1,26 @@
+.stats {
+    list-style-type: none;
+    @include flex-column-align-center;
+    row-gap: 2rem;
+    width: 100%;
+
+    @include respond(medium-screen) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include respond(stats) {
+        width: clamp(6.25rem, calc(13.39vw + -0.18rem), 11.875rem);
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 3.9375rem;
+    }
+
+    &__item {
+        width: 13.9375rem;
+
+        @include respond(medium-screen) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.buttons-container {
+    @include flex-column-align-center;
+    gap: 1.5rem 1rem;
+    width: 100%;
+    max-width: 29.375rem;
+
+    @include respond(medium-screen) {
+        flex-direction: row;
+    }
+}

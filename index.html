@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Frontend Mentor | Suite landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <img
+          src="./assets/logo.svg"
+          alt="suite logo"
+          class="logo logo--header"
+        />
+        <button class="btn btn--secondary">Request Beta Access</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__textbox textbox textbox--hero">
+            <h1 class="heading heading--hero">
+              A <span class="heading__span">super </span>
+              <span class="heading__span heading__span--roofed">
+                <img
+                  src="/assets/pattern-curved-line-1.svg"
+                  alt=""
+                  class="heading__decoration image--curved-line-1"
+                />
+                solution</span
+              >
+              for your
+              <span class="heading__span">business.</span>
+            </h1>
+            <p class="paragraph--hero">
+              Our marketing and sales automations help you scale your outreach
+              to get more leads for your company.
+            </p>
+            <button class="btn btn--primary">Request Beta Access</button>
+          </div>
+
+          <picture class="hero__picture image--hero">
+            <source
+              type="image/png"
+              srcset="
+                assets/image-hero-portrait.png    1x,
+                assets/image-hero-portrait@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/image-hero-portrait.webp    1x,
+                assets/image-hero-portrait@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/image-hero-landscape.webp    1x,
+                assets/image-hero-landscape@2x.webp 2x
+              "
+            />
+            <img
+              srcset="
+                assets/image-hero-landscape.png    1x,
+                assets/image-hero-landscape@2x.png 2x
+              "
+              alt="Full logo"
+              src="assets/image-hero-landscape@2x.png"
+            />
+          </picture>
+
+          <ul class="hero__stats stats">
+            <li class="stats__item stat textbox textbox--stats">
+              <p class="stat__figure paragraph--stat-figure">2K+</p>
+              <h3 class="stat__name heading heading--stat-name">Companies</h3>
+            </li>
+            <li class="stats__item stat textbox textbox--stats">
+              <p class="stat__figure paragraph--stat-figure">8</p>
+              <h3 class="stat__name heading heading--stat-name">Languages</h3>
+            </li>
+            <li class="stats__item stat textbox textbox--stats">
+              <p class="stat__figure paragraph--stat-figure">1.2M</p>
+              <h3 class="stat__name heading heading--stat-name">Leads</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- DONE -->
+      <section class="review">
+        <figure class="review__figure">
+          <picture class="review__picture image--review">
+            <source
+              type="image/png"
+              srcset="
+                assets/image-jeremy-large.png    1x,
+                assets/image-jeremy-large@2x.png 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/image-jeremy-large.webp    1x,
+                assets/image-jeremy-large@2x.webp 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/image-jeremy-small.webp    1x,
+                assets/image-jeremy-small@2x.webp 2x
+              "
+            />
+            <img
+              srcset="
+                assets/image-jeremy-small.png    1x,
+                assets/image-jeremy-small@2x.png 2x
+              "
+              alt="Jeremy Robinson"
+              src="assets/image-jeremy-small@2x.png"
+            />
+          </picture>
+          <img
+            src="/assets/pattern-curved-line-2.svg"
+            alt=""
+            class="image--curved-line-2"
+          />
+          <blockquote class="review__quote textbox textbox--quote">
+            <h2 class="review__heading heading heading--quote">
+              It just <span class="heading__span">works.</span>
+            </h2>
+            <p class="review__paragraph paragraph--quote">
+              “I really like how it is an all-in-one solution that handle many
+              of the tasks that you would normally need separate tools to do the
+              same job. This thing is a miracle worker.”
+            </p>
+          </blockquote>
+          <figcaption
+            class="review__author author textbox textbox--quote-author"
+          >
+            <p class="author__name paragraph--author-name">Jeremy Robinson</p>
+            <p class="author__role paragraph--author-role">CMO, Fylo</p>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <img
+          src="/assets/logo.svg"
+          alt="suite logo"
+          class="footer__logo logo--footer"
+        />
+        <p class="paragraph--footer">Copyright - Suite</p>
+        <ul
+          class="footer__social-media-panel social-media-panel list list--social-media-panel"
+        >
+          <li class="list__item">
+            <a href="" class="link">
+              <img src="./assets/icon-facebook.svg" alt="Facebook icon" />
+              <span class="u-sr-only">Go to Facebook</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="" class="link">
+              <img src="./assets/icon-twitter.svg" alt="Twitter icon" />
+              <span class="u-sr-only">Go to Twitter</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="" class="link">
+              <img src="./assets/icon-instagram.svg" alt="Instagram icon" />
+              <span class="u-sr-only">Go to Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.header {
+    @include flex-column-align-center;
+    @include horizontal-padding;
+    width: 100%;
+    padding: 0 clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
+    text-align: center;
+
+    &__inner {
+      width: 100%;
+      max-width: 69.375rem;
+      margin-top: clamp(1.5rem, calc(4.07vw + 0.55rem), 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond(medium-screen) {
+        margin-top: clamp(2.5rem, calc(1.49vw + 1.79rem), 3.125rem);
+      }
+    }
+  }

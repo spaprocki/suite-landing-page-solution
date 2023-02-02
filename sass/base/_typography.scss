@@ -1,0 +1,143 @@
+  body {
+     font-family: $default-font-stack;
+     font-weight: $default-font-weight;
+     font-size: $default-font-size;
+     color: $color-dark-blue;
+     text-align: center;
+
+  }
+
+  .heading {
+    font-weight: $default-font-weight;
+
+    &--hero {
+      text-align: left;
+      font-size: clamp(2.375rem, calc(4.58vw + 1.30rem), 3.5rem);
+      line-height: clamp(2.75rem, calc(5.09vw + 1.56rem), 4rem);
+      letter-spacing: -0.527778px;
+      max-width:  39.6875rem;
+
+      @include respond(medium-screen) {
+        font-size: clamp(3.5rem, calc(2.38vw + 2.36rem), 4.5rem);
+        line-height: clamp(4rem, calc(2.08vw + 3.00rem), 4.875rem);
+        letter-spacing: -0.777778px;
+      }
+
+      @include respond(big-screen) {
+        letter-spacing: -1px;
+      }
+    }
+
+    &--stat-name {
+      color: $color-grey;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+
+      @include respond(big-screen) {
+      text-align: left;
+      }
+    }
+
+    &--quote {
+      color: $color-cream-white;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.416667px;
+
+      @include respond(medium-screen) {
+        letter-spacing: -0.416667px;
+      }
+
+      @include respond(big-screen) {
+        text-align: left;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+      }
+    }
+
+    &__span {
+        font-weight: $default-font-weight-heading;
+
+        &--roofed {
+          position: relative;
+        }
+    }
+
+    &__decoration {
+      position: absolute;
+      top: -27px;
+      left: 0;
+      width: 100%;
+    }
+}
+
+  .paragraph {
+    color: $color-grey;
+
+    &--hero {
+      text-align: left;
+      line-height: 28px;
+      letter-spacing: 0.09px;
+      max-width: 21.875rem;
+
+      @include respond(medium-screen) {
+        font-size: clamp(1rem, calc(0.30vw + 0.86rem), 1.125rem);
+        line-height: clamp(1.75rem, calc(0.60vw + 1.46rem), 2rem);
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &--stat-figure {
+      font-weight: $default-font-weight-heading;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      
+
+      @include respond(big-screen) {
+        text-align: left;
+        letter-spacing: -0.5px;
+        }
+    }
+
+    &--quote {
+      color: $color-cream-white;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.09px;
+
+
+      @include respond(big-screen) {
+        text-align: left;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &--author-name {
+      color: $color-cream-white;
+      font-weight: $default-font-weight-heading;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: -0.18px;
+
+      @include respond(big-screen) {
+        text-align: left;
+      }
+    }
+
+    &--author-role {
+      color: $color-cream-white;
+      text-transform: uppercase;
+      line-height: 26px;
+      letter-spacing: 2.5px;
+
+      @include respond(big-screen) {
+        text-align: left;
+      }
+    }
+}

@@ -1,0 +1,14 @@
+.image {
+    &--computer {
+        width: 100%;
+        height: auto;
+
+        @include respond(medium-screen) {
+            width: clamp(19.5rem, calc(41.31vw + 9.82rem), 47rem);
+          }
+    }
+
+    &--devices {
+        width: clamp(19.4375rem, calc(47.04vw + 8.41rem), 50.75rem)
+    }
+}
