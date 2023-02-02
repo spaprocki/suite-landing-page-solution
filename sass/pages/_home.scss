@@ -60,7 +60,44 @@
     }
 
     .review {
-        @include flex-column-align-center;
+        margin-top: clamp(14.8125rem, calc(9.16vw + 12.67rem), 17.0625rem);
+        
+        @include respond(medium-screen) {
+            @include horizontal-padding;
+            margin-top: clamp(17.0625rem, calc(4.46vw + 14.92rem), 18.9375rem);
+
+        }
+
+        &__figure {
+            width: 100%;
+            max-width: 43.0625rem; 
+            padding-bottom: 4rem;
+            border-radius: 0.9375rem;
+            @include flex-column-align-center;
+            background-color: $color-dark-blue;
+
+            @include respond(medium-screen) {
+            max-width: 69.375rem;
+            }
+        }
+
+        &__picture {
+            margin-top: -11.3125rem;
+            @include flex-column-align-center;
+            width: 100%;
+        }
+
+        &__decoration {
+            margin-top: 2.5rem;
+        }
+
+        &__quote {
+            margin-top: 2.3125rem;
+        }
+
+        &__author {
+            margin-top: 2.5rem;
+        }
 
     }
 
