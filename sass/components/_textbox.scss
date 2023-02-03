@@ -25,10 +25,21 @@
         padding: 0 1rem;
         gap: 2.5rem;
         max-width: 35.8125rem;
+
+        @include respond(stats) {
+            align-items: flex-start;
+            text-align: left;
+            padding: 0;
+            max-width: 21.875rem;
+        }
     }
 
     &--quote-author {
         @include flex-column-align-center;
+        @include respond(stats) {
+            align-items: flex-start;
+            text-align: left;
+        }
         @include respond(big-screen) {
             align-items: flex-start;
             text-align: left;

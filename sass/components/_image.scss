@@ -7,6 +7,11 @@
 
         & img {
             width: 15.75rem;
+
+            @include respond(stats) {
+                width: auto;
+                height: 100%;
+            }
         }
     }
 }

@@ -44,16 +44,15 @@
       color: $color-cream-white;
       font-size: 40px;
       line-height: 48px;
-      letter-spacing: -0.416667px;
+      letter-spacing: -0.42px;
 
       @include respond(medium-screen) {
-        letter-spacing: -0.416667px;
+        font-size: clamp(2.5rem, calc(1.19vw + 1.93rem), 3rem);
+        line-height: clamp(3rem, calc(1.19vw + 2.43rem), 3.5rem);
       }
 
       @include respond(big-screen) {
         text-align: left;
-        font-size: 48px;
-        line-height: 56px;
         letter-spacing: -0.5px;
       }
     }
@@ -108,11 +107,13 @@
       line-height: 32px;
       letter-spacing: 0.09px;
 
+      @include respond(medium-screen) {
+        font-size: clamp(1.125rem, calc(0.30vw + 0.98rem), 1.25rem);
+        line-height: clamp(2rem, calc(0.45vw + 1.79rem), 2.1875rem);
+      }
 
       @include respond(big-screen) {
         text-align: left;
-        font-size: 20px;
-        line-height: 35px;
         letter-spacing: 0.1px;
       }
     }

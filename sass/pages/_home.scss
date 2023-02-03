@@ -77,7 +77,18 @@
             background-color: $color-dark-blue;
 
             @include respond(medium-screen) {
-            max-width: 69.375rem;
+                max-width: 69.375rem;
+            }
+
+            @include respond(stats) {
+                position: relative;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+                padding:    clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem)
+                            clamp(3.625rem, calc(16.11vw + -6.68rem), 7.8125rem)
+                            clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem)
+                            clamp(3.625rem, calc(12.98vw + -4.68rem), 7rem);
             }
         }
 
@@ -85,14 +96,31 @@
             margin-top: -11.3125rem;
             @include flex-column-align-center;
             width: 100%;
+
+            @include respond(stats) {
+                position: absolute;
+                margin-top: 0;
+                bottom: 0;
+                left: clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem);
+                height: 110%;
+                width: auto;
+                // width: clamp(15.75rem, calc(29.57vw + -3.17rem), 23.4375rem);
+            }
         }
 
         &__decoration {
             margin-top: 2.5rem;
+            @include respond(stats) {
+                margin-top: 4.5rem;
+                margin-right: 3.3125rem;
+            }
         }
 
         &__quote {
             margin-top: 2.3125rem;
+            @include respond(stats) {
+                margin-top: 0;
+            }
         }
 
         &__author {

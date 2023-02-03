@@ -92,15 +92,14 @@ body {
     color: #faf7f5;
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: -0.416667px; }
+    letter-spacing: -0.42px; }
     @media (min-width: 48rem) {
       .heading--quote {
-        letter-spacing: -0.416667px; } }
+        font-size: clamp(2.5rem, calc(1.19vw + 1.93rem), 3rem);
+        line-height: clamp(3rem, calc(1.19vw + 2.43rem), 3.5rem); } }
     @media (min-width: 90rem) {
       .heading--quote {
         text-align: left;
-        font-size: 48px;
-        line-height: 56px;
         letter-spacing: -0.5px; } }
   .heading__span {
     font-weight: 700; }
@@ -137,11 +136,13 @@ body {
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.09px; }
+    @media (min-width: 48rem) {
+      .paragraph--quote {
+        font-size: clamp(1.125rem, calc(0.30vw + 0.98rem), 1.25rem);
+        line-height: clamp(2rem, calc(0.45vw + 1.79rem), 2.1875rem); } }
     @media (min-width: 90rem) {
       .paragraph--quote {
         text-align: left;
-        font-size: 20px;
-        line-height: 35px;
         letter-spacing: 0.1px; } }
   .paragraph--author-name {
     color: #faf7f5;
@@ -231,6 +232,10 @@ body {
 
 .image--review img {
   width: 15.75rem; }
+  @media (min-width: 64rem) {
+    .image--review img {
+      width: auto;
+      height: 100%; } }
 
 .link {
   text-decoration: none;
@@ -340,10 +345,20 @@ body {
     padding: 0 1rem;
     gap: 2.5rem;
     max-width: 35.8125rem; }
+    @media (min-width: 64rem) {
+      .textbox--quote {
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        max-width: 21.875rem; } }
   .textbox--quote-author {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media (min-width: 64rem) {
+      .textbox--quote-author {
+        align-items: flex-start;
+        text-align: left; } }
     @media (min-width: 90rem) {
       .textbox--quote-author {
         align-items: flex-start;
@@ -476,15 +491,37 @@ body {
       @media (min-width: 48rem) {
         .main .review__figure {
           max-width: 69.375rem; } }
+      @media (min-width: 64rem) {
+        .main .review__figure {
+          position: relative;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-end;
+          padding: clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem) clamp(3.625rem, calc(16.11vw + -6.68rem), 7.8125rem) clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem) clamp(3.625rem, calc(12.98vw + -4.68rem), 7rem); } }
     .main .review__picture {
       margin-top: -11.3125rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%; }
+      @media (min-width: 64rem) {
+        .main .review__picture {
+          position: absolute;
+          margin-top: 0;
+          bottom: 0;
+          left: clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem);
+          height: 110%;
+          width: auto; } }
     .main .review__decoration {
       margin-top: 2.5rem; }
+      @media (min-width: 64rem) {
+        .main .review__decoration {
+          margin-top: 4.5rem;
+          margin-right: 3.3125rem; } }
     .main .review__quote {
       margin-top: 2.3125rem; }
+      @media (min-width: 64rem) {
+        .main .review__quote {
+          margin-top: 0; } }
     .main .review__author {
       margin-top: 2.5rem; }
