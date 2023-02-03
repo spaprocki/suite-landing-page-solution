@@ -75,6 +75,7 @@
             border-radius: 0.9375rem;
             @include flex-column-align-center;
             background-color: $color-dark-blue;
+            z-index: 2;
 
             @include respond(medium-screen) {
                 max-width: 69.375rem;
@@ -101,7 +102,7 @@
                 position: absolute;
                 margin-top: 0;
                 bottom: 0;
-                left: clamp(4rem, calc(5.77vw + 0.31rem), 5.5rem);
+                left: clamp(4rem, calc(11.54vw + -3.38rem), 7rem);
                 height: 110%;
                 width: auto;
                 // width: clamp(15.75rem, calc(29.57vw + -3.17rem), 23.4375rem);

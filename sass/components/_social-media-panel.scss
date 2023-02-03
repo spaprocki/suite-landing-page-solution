@@ -1,10 +1,13 @@
 .social-media-panel {
-    width: 10rem;
+  list-style-type: none;
+    width: 116px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
 
     @include respond(medium-screen) {
-        width: 7.5rem;
+        margin-right: 0;
+        margin-left: auto;
       }
 }

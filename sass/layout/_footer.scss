@@ -1,37 +1,41 @@
 .footer {
-    margin-top: clamp(10.625rem, calc(-1.88vw + 11.07rem), 9.375rem);
+    margin-top: clamp(-464px, calc(-94.91vw + 16.56rem), -91px);
     width: 100%;
-    padding: 0 2rem;
+    padding:    clamp(11.875rem, calc(88.04vw + -8.76rem), 33.5rem)
+                clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem)
+                clamp(5rem, calc(-2.04vw + 5.48rem), 4.5rem)
+                clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
     background-color: $color-cream;
+    z-index: 1;
     @include flex-column-align-center;
+
+    @include respond(medium-screen) {
+        max-width: 90rem;
+      }
 
     &__inner {
         width: 100%;
         max-width: 69.375rem;
-        margin-top: clamp(3.4375rem, calc(-1.50vw + 3.79rem), 2.4375rem);
-        margin-bottom: clamp(3.125rem, calc(-0.94vw + 3.35rem), 2.5rem);
         @include flex-column-align-center;
+        row-gap: 2.0625rem;
 
         @include respond(medium-screen) {
             flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
           }
     }
 
-    &__nav {
-        margin-top: 2.5rem;
-
+    &__flex-container {
+        text-align: center;
         @include respond(medium-screen) {
-            margin-top: 0;
-            margin-left: clamp(1.875rem, calc(15.63vw + -5.63rem), 8.4375rem);
+            width: 30%;
           }
     }
 
     &__social-media-panel {
-        margin-top: 3.125rem;
-
         @include respond(medium-screen) {
             margin-top: 0;
-            margin-left: auto;
           }
     }
 }

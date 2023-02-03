@@ -1,6 +1,13 @@
 .logo {
 
     &--footer {
-        width: 3.4375rem;
+        margin: auto;
+        @include respond(medium-screen) {
+            width: auto;
+            height: 100%;
+            margin-right: auto;
+            margin-left: 0;
+        }
+        // width: 55px;
     }
 }
