@@ -32,6 +32,7 @@
         &__picture {
             margin-top: 3.5rem;
             width: 100%;
+            
 
             @include respond(medium-screen) {
                 margin-top: 0;
@@ -69,6 +70,7 @@
         }
 
         &__figure {
+            position: relative;
             width: 100%;
             max-width: 43.0625rem; 
             padding-bottom: 4rem;
@@ -97,6 +99,8 @@
             margin-top: -11.3125rem;
             @include flex-column-align-center;
             width: 100%;
+            background-image: url('assets/pattern-blur.svg');
+            background-size: contain;
 
             @include respond(stats) {
                 position: absolute;
@@ -107,6 +111,11 @@
                 width: auto;
                 // width: clamp(15.75rem, calc(29.57vw + -3.17rem), 23.4375rem);
             }
+        }
+
+        &__blur {
+            @include respond(stats) {
+            left: clamp(5.875rem, calc(7.14vw + 2.45rem), 8.875rem);        }
         }
 
         &__decoration {

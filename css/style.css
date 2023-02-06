@@ -231,11 +231,25 @@ body {
   width: 100%; }
 
 .image--review img {
+  z-index: 1;
   width: 15.75rem; }
   @media (min-width: 64rem) {
     .image--review img {
       width: auto;
       height: 100%; } }
+
+.image--blur {
+  background: #DB65E2;
+  mix-blend-mode: normal;
+  opacity: 0.48;
+  filter: blur(67.957px);
+  width: clamp(6.25rem, calc(25.45vw + 0.29rem), 12.5rem);
+  height: clamp(6.25rem, calc(25.45vw + 0.29rem), 12.5rem);
+  position: absolute; }
+  @media (min-width: 64rem) {
+    .image--blur {
+      width: clamp(12.5rem, calc(14.88vw + 5.36rem), 18.75rem);
+      height: clamp(12.5rem, calc(14.88vw + 5.36rem), 18.75rem); } }
 
 .link {
   text-decoration: none;
@@ -490,6 +504,7 @@ body {
         padding: 0 clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
         margin-top: clamp(17.0625rem, calc(4.46vw + 14.92rem), 18.9375rem); } }
     .main .review__figure {
+      position: relative;
       width: 100%;
       max-width: 43.0625rem;
       padding-bottom: 4rem;
@@ -514,7 +529,9 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      background-image: url("assets/pattern-blur.svg");
+      background-size: contain; }
       @media (min-width: 64rem) {
         .main .review__picture {
           position: absolute;
@@ -523,6 +540,9 @@ body {
           left: clamp(4rem, calc(11.54vw + -3.38rem), 7rem);
           height: 110%;
           width: auto; } }
+    @media (min-width: 64rem) {
+      .main .review__blur {
+        left: clamp(5.875rem, calc(7.14vw + 2.45rem), 8.875rem); } }
     .main .review__decoration {
       margin-top: 2.5rem; }
       @media (min-width: 64rem) {

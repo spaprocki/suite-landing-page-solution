@@ -6,11 +6,29 @@
     &--review {
 
         & img {
+            z-index: 1;
             width: 15.75rem;
+            
             @include respond(stats) {
                 width: auto;
                 height: 100%;
             }
+        }
+    }
+
+    &--blur {
+        background: #DB65E2;
+        mix-blend-mode: normal;
+        opacity: 0.48;
+        filter: blur(67.957px);
+        width: clamp(6.25rem, calc(25.45vw + 0.29rem), 12.5rem);
+        height: clamp(6.25rem, calc(25.45vw + 0.29rem), 12.5rem);
+        position: absolute;
+
+        @include respond(stats) {
+            width: clamp(12.5rem, calc(14.88vw + 5.36rem), 18.75rem);
+            height: clamp(12.5rem, calc(14.88vw + 5.36rem), 18.75rem);
+
         }
     }
 }
