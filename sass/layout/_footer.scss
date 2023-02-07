@@ -31,16 +31,10 @@
           }
     }
 
-    &__flex-container {
+    &__flex-item {
         text-align: center;
         @include respond(medium-screen) {
             width: 30%;
-          }
-    }
-
-    &__social-media-panel {
-        @include respond(medium-screen) {
-            margin-top: 0;
           }
     }
 }

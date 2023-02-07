@@ -1,5 +1,5 @@
 .social-media-panel {
-  list-style-type: none;
+    list-style-type: none;
     width: 7.25rem;
     display: flex;
     flex-direction: row;
@@ -8,6 +8,5 @@
 
     @include respond(medium-screen) {
         margin-right: 0;
-        margin-left: auto;
       }
 }

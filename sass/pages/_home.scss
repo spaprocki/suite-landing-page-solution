@@ -31,7 +31,6 @@
         &__picture {
             margin-top: 3.5rem;
             width: 100%;
-            
 
             @include respond(medium-screen) {
                 margin-top: 0;
@@ -41,10 +40,6 @@
                 right: 0;
                 left: clamp(25.5rem, calc(9.82vw + 20.79rem), 29.625rem);
                 z-index: -1;
-            }
-
-            & img {
-                width: 100%;
             }
         }
 
