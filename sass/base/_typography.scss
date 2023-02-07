@@ -30,8 +30,8 @@
 
     &--stat-name {
       color: $color-grey;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 1rem;
+      line-height: 1.625rem;
       letter-spacing: 2.5px;
       text-transform: uppercase;
 
@@ -42,8 +42,8 @@
 
     &--quote {
       color: $color-cream-white;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 2.5rem;
+      line-height: 3rem;
       letter-spacing: -0.42px;
 
       @include respond(medium-screen) {
@@ -67,7 +67,7 @@
 
     &__decoration {
       position: absolute;
-      top: -27px;
+      top: -1.6875rem;
       left: 0;
       width: 100%;
     }
@@ -78,7 +78,7 @@
 
     &--hero {
       text-align: left;
-      line-height: 28px;
+      line-height: 1.75rem;
       letter-spacing: 0.09px;
       max-width: 21.875rem;
 
@@ -103,8 +103,8 @@
 
     &--quote {
       color: $color-cream-white;
-      font-size: 18px;
-      line-height: 32px;
+      font-size: 1.125rem;
+      line-height: 2rem;
       letter-spacing: 0.09px;
 
       @include respond(medium-screen) {
@@ -122,8 +122,8 @@
       color: $color-cream-white;
       font-weight: $default-font-weight-heading;
       text-transform: uppercase;
-      font-size: 18px;
-      line-height: 32px;
+      font-size: 1.125rem;
+      line-height: 2rem;
       letter-spacing: -0.18px;
 
       @include respond(big-screen) {
@@ -134,14 +134,11 @@
     &--author-role {
       color: $color-cream-white;
       text-transform: uppercase;
-      line-height: 26px;
+      line-height: 1.625rem;
       letter-spacing: 2.5px;
 
       @include respond(big-screen) {
         text-align: left;
       }
-    }
-
-    &--footer {
     }
 }

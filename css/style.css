@@ -81,8 +81,8 @@ body {
         letter-spacing: -1px; } }
   .heading--stat-name {
     color: #49566e;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     letter-spacing: 2.5px;
     text-transform: uppercase; }
     @media (min-width: 90rem) {
@@ -90,8 +90,8 @@ body {
         text-align: left; } }
   .heading--quote {
     color: #faf7f5;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     letter-spacing: -0.42px; }
     @media (min-width: 48rem) {
       .heading--quote {
@@ -107,7 +107,7 @@ body {
       position: relative; }
   .heading__decoration {
     position: absolute;
-    top: -27px;
+    top: -1.6875rem;
     left: 0;
     width: 100%; }
 
@@ -115,7 +115,7 @@ body {
   color: #49566e; }
   .paragraph--hero {
     text-align: left;
-    line-height: 28px;
+    line-height: 1.75rem;
     letter-spacing: 0.09px;
     max-width: 21.875rem; }
     @media (min-width: 48rem) {
@@ -133,8 +133,8 @@ body {
         letter-spacing: -0.5px; } }
   .paragraph--quote {
     color: #faf7f5;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
     letter-spacing: 0.09px; }
     @media (min-width: 48rem) {
       .paragraph--quote {
@@ -148,8 +148,8 @@ body {
     color: #faf7f5;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 1.125rem;
+    line-height: 2rem;
     letter-spacing: -0.18px; }
     @media (min-width: 90rem) {
       .paragraph--author-name {
@@ -157,7 +157,7 @@ body {
   .paragraph--author-role {
     color: #faf7f5;
     text-transform: uppercase;
-    line-height: 26px;
+    line-height: 1.625rem;
     letter-spacing: 2.5px; }
     @media (min-width: 90rem) {
       .paragraph--author-role {
@@ -308,7 +308,7 @@ body {
 
 .social-media-panel {
   list-style-type: none;
-  width: 116px;
+  width: 7.25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -401,7 +401,7 @@ body {
 .footer {
   margin-top: clamp(-464px, calc(-94.91vw + 16.56rem), -91px);
   width: 100%;
-  padding: clamp(11.875rem, calc(88.04vw + -8.76rem), 33.5rem) clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem) clamp(5rem, calc(-2.04vw + 5.48rem), 4.5rem) clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
+  padding: clamp(190px, calc(88.04vw + -8.76rem), 536px) clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem) clamp(5rem, calc(-2.04vw + 5.48rem), 4.5rem) clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
   background-color: #f3ede7;
   z-index: 1;
   display: flex;
@@ -409,7 +409,9 @@ body {
   align-items: center; }
   @media (min-width: 48rem) {
     .footer {
-      max-width: 90rem; } }
+      margin-top: clamp(-464px, calc(29.61vw + -43.21rem), -265px);
+      max-width: 90rem;
+      padding: clamp(360px, calc(-26.19vw + 46.07rem), 536px) clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem) 4.5rem clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem); } }
   .footer__inner {
     width: 100%;
     max-width: 69.375rem;
