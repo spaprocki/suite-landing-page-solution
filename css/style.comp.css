@@ -2,7 +2,8 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #faf7f5; }
 
 /* Box sizing rules, remove default margin and padding */
 *,
@@ -107,9 +108,14 @@ body {
       position: relative; }
   .heading__decoration {
     position: absolute;
-    top: -1.6875rem;
+    transform: translateY(-100%);
+    margin-top: clamp(-1rem, calc(-2.04vw + -0.02rem), -0.5rem);
+    top: 0;
     left: 0;
     width: 100%; }
+    @media (min-width: 48rem) {
+      .heading__decoration {
+        margin-top: clamp(-1.375rem, calc(-0.89vw + -0.57rem), -1rem); } }
 
 .paragraph {
   color: #49566e; }
