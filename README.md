@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/spaprocki/suite-landing-page)
+- Solution URL: [github](https://github.com/spaprocki/suite-landing-page-solution/)
 - Live Site URL: [netlify](https://spaprocki-suite-landing-page.netlify.app/)
 
 ## My process
