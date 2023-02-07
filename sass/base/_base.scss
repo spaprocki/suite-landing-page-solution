@@ -1,4 +1,5 @@
 body {
     box-sizing: border-box;
     @include flex-column-align-center;
+    background-color: $color-cream-white;
   }
